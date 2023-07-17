@@ -34,7 +34,7 @@ jobs:
         iisreset /start
     
     - name: Curl the website as a smoke test
-      run: curl http://localhost/dotnetcore-webapp
+      run: curl http://10.1.64.154/
 
     - name: Run Web Test
       run: |

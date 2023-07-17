@@ -14,6 +14,9 @@ Deployment is done with these steps:
 * Run a set of end-to-end (aka webtests) on the deployed application
 
 
-enale long paths
+enable long paths
 https://github.com/actions/checkout/discussions/459
 Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -value 1
+
+bundle for iis host
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.9-windows-hosting-bundle-installer
