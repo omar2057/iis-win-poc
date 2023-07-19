@@ -19,7 +19,7 @@ jobs:
       run: nuget restore webapp/SimpleFrameworkApp.sln
 
     - name: Build and Publish Web App
-      run: msbuild webapp/SimpleFrameworkApp.csproj /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile="C:\inetpub\wwwroot\net-wepapp"
+      run: msbuild webapp/SimpleFrameworkApp.csproj /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
